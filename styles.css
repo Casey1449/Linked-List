@@ -58,8 +58,25 @@ button {
   transition-duration: .1s;
 }
 
+button:disabled {
+  padding: 0;
+  border: none;
+  height:35px;
+  width: 150px;
+  margin-bottom: 20px;
+  font-family: 'Lobster Two', cursive;
+  font-size: 1.4em;
+  background-color: grey;
+  opacity: .6;
+  color: ivory;
+}
+
 button:hover{
     transform: scale(1.05);
+}
+
+button:hover:disabled {
+  transform: none;
 }
 
 article{
