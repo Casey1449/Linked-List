@@ -24,22 +24,3 @@ $('.bookmark-list').on('click', 'button.read-button', function(){
 $('.bookmark-list').on('click', 'button.remove-button', function(){
     $(this).parent().remove();
 });
-
-// $('.url-address').on('click', function(){
-//   $('.bookmark-button').disabled = "false";
-// })
-
-// $('.bookmark-button').prop('disabled', true);
-//      $('input').on('change', function() {
-//         if($('.url-address').val() !== '' && $('.bookmark-name').val() !== ''){
-//            $('.bookmark-button').prop('disabled', false);
-//         }
-//      });
-
-$('input').on('keyup', function() {
-  if( $('.url-address').val() !== '' && $('.bookmark-name').val() !== ''){
-           $('.bookmark-button').prop('disabled', false);
-        }else {
-          $('.bookmark-button').prop('disabled', true);
-        }
-     });
