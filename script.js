@@ -33,6 +33,7 @@ function makeArticle(string1, string2){
     else {
       makeArticle($nameInput.val(), $urlInput.val());
     }
+    
     totalBookmarkCounter ++;
     unreadBookmarkCounter ++;
     makeCounters();

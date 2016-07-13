@@ -37,7 +37,7 @@ h1 {
 }
 
 .top-container{
-  width: 900px;
+  width: 100%;
   margin: auto;
 }
 
@@ -135,4 +135,12 @@ article button {
 
 .remove-button {
   right: 33px;
+}
+
+@media screen and (max-width: 810px){
+
+ label {
+   display: block;
+ }
+
 }
