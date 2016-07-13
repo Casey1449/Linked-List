@@ -7,8 +7,8 @@ var readBookmarkCounter = 0;
 var unreadBookmarkCounter = 0;
 
 function makeCounters() {
-  $('.counters').html('<article class = "total-counter"><p>You currently have ' + totalBookmarkCounter + ' total mark(s).</p>');
-  $('.counters').append('<article class = "unread-counter"><p>You currently have ' + unreadBookmarkCounter + ' unread mark(s) and ' + readBookmarkCounter + ' read mark(s).</p>')
+  $('.counters').html('<p>' + totalBookmarkCounter + ' total mark(s). </p>');
+  $('.counters').append('<p>' + unreadBookmarkCounter + ' unread,  ' + readBookmarkCounter + ' read.</p>')
 };
 
 
