@@ -5,7 +5,7 @@ var $urlInput = $('.url-address');
 var $bookmarkButton = $('.bookmark-button')
 
 function makeArticle(string1, string2){
-  $('.bookmark-list').append('<article class="list-item"><p>' + string1 + '</p><p>' + string2 + '</p><button class="read-button">READ</button><button class="remove-button">REMOVE</button></article>')}
+  $('.bookmark-list').append('<article class="list-item"><p>' + string1 + '</p><p>' + string2 + '</p><button class="read-button">mark as read</button><button class="remove-button">remove</button></article>')}
 
   $('.bookmark-button').on('click', function() {
     makeArticle($nameInput.val(), $urlInput.val());
