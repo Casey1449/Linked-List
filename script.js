@@ -19,25 +19,27 @@ function checkBookmarkButton() {
   };
 }
 
+function validateUrl(url){
+  return /^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i.test(url);
+}
+
+function makeArticle(string1, string2){
+  $('.bookmark-list').append('<article class="list-item"><p>' + string1 + '<a href="' + string2 + '">' + 'Go!' + '</a>' + '</p><button class="read-button">mark as read</button><button class="remove-button">remove</button></article>')}
+
 $('input').on('keyup', function() {
   checkBookmarkButton();
 })
 
-function makeArticle(string1, string2){
-
-  $('.bookmark-list').append('<article class="list-item"><p>' + string1 + '<a href="' + string2 + '">' + 'Go!' + '</a>' + '</p><button class="read-button">mark as read</button><button class="remove-button">remove</button></article>')}
-
-  $('.bookmark-button').on('click', function() {
-    if ($nameInput.val() ==='' || $urlInput.val() === '')
-    {alert("Please enter a name AND a URL")}
-    else {
+$('.bookmark-button').on('click', function() {
+  if (validateUrl($urlInput.val())){
       makeArticle($nameInput.val(), $urlInput.val());
-    }
-    
-    totalBookmarkCounter ++;
-    unreadBookmarkCounter ++;
-    makeCounters();
-  })
+      totalBookmarkCounter ++;
+      unreadBookmarkCounter ++;
+      makeCounters();
+  } else {
+      alert("That's not a valid URL, unfortch 😢");
+  };
+})
 
 $('.bookmark-list').on('click', 'button.read-button', function(){
     $(this).parent().toggleClass('read');
