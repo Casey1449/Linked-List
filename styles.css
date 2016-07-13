@@ -79,14 +79,41 @@ button:hover:disabled {
   transform: none;
 }
 
-article{
+article {
+  position: relative;
   width: 400px;
+  height: 100px;
   margin: auto;
-  padding: 10px;
   margin-top: 15px;
-  background-color: #daad86
+  background-color: #daad86;
+  padding-top: 15px;
+  font-size: 1.3em;
+  color: #312c32;
+  text-align: left;
+}
+
+article p {
+  margin-top: 0%;
+  margin-left: 10%;
+}
+
+article a {
+  position: absolute;
+  text-decoration: none;
+  font-weight: bold;
+  right: 33px;
 }
 
 article button {
-  margin-bottom: 0px;
+  font-size: 1em;
+  position: absolute;
+  bottom: -10px;
+}
+
+.read-button {
+  left: 33px;
+}
+
+.remove-button {
+  right: 33px;
 }

@@ -26,7 +26,7 @@ $('input').on('keyup', function() {
 
 function makeArticle(string1, string2){
 
-  $('.bookmark-list').append('<article class="list-item"><p>' + string1 + '</p><p>' + '<a href="' + string2 + '">' + 'Go!' + '</a>' + '</p><button class="read-button">mark as read</button><button class="remove-button">remove</button></article>')}
+  $('.bookmark-list').append('<article class="list-item"><p>' + string1 + '<a href="' + string2 + '">' + 'Go!' + '</a>' + '</p><button class="read-button">mark as read</button><button class="remove-button">remove</button></article>')}
 
   $('.bookmark-button').on('click', function() {
     if ($nameInput.val() ==='' || $urlInput.val() === '')
