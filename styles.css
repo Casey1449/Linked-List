@@ -1,8 +1,75 @@
-.top-container{
-  border: 1px solid black;
+*{
+  box-sizing: border-box;
 }
 
-.bookmark-list{
-  border: 3px dotted black;
-  height: 300px;
+body {
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  background-color: #98dafc;
+}
+
+h1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 5em;
+  font-weight: bold;
+  color: ivory;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.top-container{
+  width: 900px;
+  margin: auto;
+}
+
+label {
+  font-size: 1.5em;
+  color: ivory;
+}
+
+input {
+  height: 30px;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  font-size: .7em;
+  background-color: ivory;
+  color: #312c32;
+  border: none;
+  padding: 10px;
+
+}
+
+.url-address {
+  width: 325px;
+}
+
+button {
+  padding: 0;
+  border: none;
+  height:35px;
+  width: 150px;
+  margin-bottom: 20px;
+  font-family: 'Lobster Two', cursive;
+  font-size: 1.4em;
+  background-color: #312c32;
+  color: ivory;
+  transition-duration: .1s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+article{
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #daad86
+}
+
+article button {
+  margin-bottom: 0px;
 }
