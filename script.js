@@ -11,7 +11,6 @@ function makeCounters() {
   $('.counters').append('<p>' + unreadBookmarkCounter + ' unread,  ' + readBookmarkCounter + ' read.</p>')
 };
 
-
 function checkBookmarkButton() {
   if ($urlInput.val() !== '' && $nameInput.val() !== '') {
   $($bookmarkButton).prop('disabled', false)
@@ -44,6 +43,11 @@ $('.bookmark-list').on('click', 'button.read-button', function(){
     readBookmarkCounter = $('.read').length;
     unreadBookmarkCounter = totalBookmarkCounter - readBookmarkCounter;
     makeCounters();
+    if($(this).parent().hasClass('read')){
+      $(this).text('mark as unread')
+    } else {
+      $(this).text('mark as read')
+    }
 });
 
 $('.bookmark-list').on('click', 'button.remove-button', function(){
