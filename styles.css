@@ -157,3 +157,19 @@ article button {
  }
 
 }
+
+@media screen and (max-width: 700px){
+
+  h1{
+    margin-top: 150px;
+  }
+
+  .clear-read {
+    left:30%;
+    top:95px;
+
+  }
+}
+
+
+}
